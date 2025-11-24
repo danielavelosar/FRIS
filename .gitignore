@@ -1,0 +1,255 @@
+# =====================================================================
+# FRIS 2.0 - Git Ignore File
+# =====================================================================
+# Purpose: Prevent committing sensitive data and temporary files
+# =====================================================================
+
+# =====================================================================
+# CRITICAL: Environment Variables & Credentials
+# =====================================================================
+.env
+.env.local
+.env.*.local
+*.env
+.env.backup
+
+# Credentials files
+credentials.json
+secrets.yaml
+secrets.yml
+config.local.yml
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+
+# =====================================================================
+# Docker Volumes & Data
+# =====================================================================
+postgres_data/
+pgadmin_data/
+data/
+volumes/
+
+# =====================================================================
+# Python
+# =====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# =====================================================================
+# Jupyter Notebooks
+# =====================================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.jupyter/
+*.ipynb~
+
+# =====================================================================
+# IDEs
+# =====================================================================
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# =====================================================================
+# Operating System Files
+# =====================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# =====================================================================
+# Logs & Monitoring
+# =====================================================================
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# =====================================================================
+# Database Files
+# =====================================================================
+
+# Database dumps (may contain sensitive data)
+*.sql.gz
+*.dump
+*.backup
+backup/
+dumps/
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# =====================================================================
+# Temporary & Cache Files
+# =====================================================================
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# =====================================================================
+# Cloud & Infrastructure
+# =====================================================================
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# AWS
+.aws/
+aws-exports.js
+
+# Azure
+.azure/
+
+# GCP
+gcp-key.json
+service-account.json
+
+# =====================================================================
+# Node.js (if adding frontend later)
+# =====================================================================
+node_modules/
+npm-debug.log
+yarn-error.log
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+.pnp.*
+
+# =====================================================================
+# Compiled Documentation
+# =====================================================================
+site/
+docs/_build/
+docs/.doctrees/
+
+# =====================================================================
+# ML Models & Large Files
+# =====================================================================
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.model
+models/checkpoints/
+*.ckpt
+*.pth
+*.weights
+
+# =====================================================================
+# Misc
+# =====================================================================
+.env.example.local
+TODO.local.md
+NOTES.local.md
+scratch/
+playground/
